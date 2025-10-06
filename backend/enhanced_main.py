@@ -138,15 +138,24 @@ async def upload_video(file: UploadFile = File(...)):
         logger.error(f"Upload error: {e}")
         raise HTTPException(status_code=500, detail=f"アップロードエラー: {str(e)}")
 
+class SessionCreateRequest(BaseModel):
+    session_id: str
+
 @app.post("/api/sessions")
-async def create_tracking_session(session_id: str):
+async def create_tracking_session(request: SessionCreateRequest):
     """トラッキングセッション作成"""
     try:
+        session_id = request.session_id
+        
         if session_id not in sessions:
             raise HTTPException(status_code=404, detail="セッションが見つかりません")
         
         session_info = sessions[session_id]
         video_path = session_info["file_path"]
+        
+        # Check if video file exists
+        if not os.path.exists(video_path):
+            raise HTTPException(status_code=404, detail="動画ファイルが見つかりません")
         
         # ROIトラッキングサービスでセッション作成
         result = roi_tracking_service.create_session(session_id, video_path)
