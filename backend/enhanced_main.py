@@ -40,10 +40,29 @@ app = FastAPI(
 # CORS設定
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "*",
+        "https://3001-ifsp0ufrb6mp7lags2c00-6532622b.e2b.dev",
+        "https://8001-ifsp0ufrb6mp7lags2c00-6532622b.e2b.dev",
+        "http://localhost:3000",
+        "http://localhost:3001", 
+        "http://localhost:8000",
+        "http://localhost:8001"
+    ],
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allow_headers=[
+        "*",
+        "Accept",
+        "Accept-Language",
+        "Content-Language",
+        "Content-Type",
+        "Authorization",
+        "X-Requested-With",
+        "Access-Control-Allow-Origin",
+        "Access-Control-Allow-Headers",
+        "Access-Control-Allow-Methods"
+    ],
 )
 
 # 静的ファイル
@@ -357,6 +376,19 @@ async def delete_session(session_id: str):
     except Exception as e:
         logger.error(f"Session deletion error: {e}")
         raise HTTPException(status_code=500, detail=f"セッション削除エラー: {str(e)}")
+
+@app.options("/api/{full_path:path}")
+async def options_handler(full_path: str):
+    """Handle preflight OPTIONS requests"""
+    return JSONResponse(
+        content={"message": "OK"},
+        headers={
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+            "Access-Control-Allow-Headers": "*",
+            "Access-Control-Max-Age": "3600"
+        }
+    )
 
 @app.get("/api/health")
 async def health_check():
