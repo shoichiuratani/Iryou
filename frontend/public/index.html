@@ -1455,6 +1455,11 @@
         }
 
         async function confirmROI() {
+            console.log('🔥 confirmROI function called!');
+            console.log('Current session:', currentSession);
+            console.log('ROI complete?', isROIComplete());
+            console.log('ROI points:', roiPoints);
+            
             if (!currentSession || !isROIComplete()) {
                 showNotification('ROIが完成していないか、セッションが無効です。', 'warning');
                 return;
@@ -1488,12 +1493,31 @@
                 
                 // Update UI
                 document.getElementById('resetROIBtn').disabled = false;
-                document.getElementById('trackingSection').style.display = 'block';
+                
+                // Force show tracking section with debug
+                console.log('🎯 Attempting to show tracking section...');
+                const trackingSection = document.getElementById('trackingSection');
+                if (trackingSection) {
+                    trackingSection.style.display = 'block';
+                    console.log('✅ Tracking section displayed!');
+                } else {
+                    console.error('❌ Tracking section not found!');
+                }
                 
                 // Update results display  
-                document.getElementById('totalProcessedFrames').textContent = '0';
-                document.getElementById('totalTrackedInstruments').textContent = result.instruments_detected || 0;
-                document.getElementById('roiArea').textContent = `${result.roi_area || 0}px²`;
+                try {
+                    const totalProcessedEl = document.getElementById('totalProcessedFrames');
+                    const totalTrackedEl = document.getElementById('totalTrackedInstruments');
+                    const roiAreaEl = document.getElementById('roiArea');
+                    
+                    if (totalProcessedEl) totalProcessedEl.textContent = '0';
+                    if (totalTrackedEl) totalTrackedEl.textContent = result.instruments_detected || 0;
+                    if (roiAreaEl) roiAreaEl.textContent = `${result.roi_area || 0}px²`;
+                    
+                    console.log('✅ Results display updated');
+                } catch (error) {
+                    console.error('❌ Error updating results display:', error);
+                }
                 
                 // Show instrument types
                 if (result.instrument_types && result.instrument_types.length > 0) {
@@ -1681,6 +1705,39 @@
         // Additional debugging
         console.log('📋 ROI Application Loaded');
         console.log('🎯 Click on video canvas after upload to add ROI points');
+
+        // Debug function to force show tracking section
+        function forceShowTrackingSection() {
+            console.log('🔧 Force showing tracking section...');
+            const trackingSection = document.getElementById('trackingSection');
+            if (trackingSection) {
+                trackingSection.style.display = 'block';
+                console.log('✅ Tracking section forced to display!');
+                showNotification('トラッキングセクションを強制表示しました', 'info');
+            } else {
+                console.error('❌ Tracking section element not found!');
+            }
+        }
+
+        // Add force show button to page for debugging
+        window.addEventListener('load', () => {
+            const debugBtn = document.createElement('button');
+            debugBtn.textContent = '🔧 デバッグ: トラッキング表示';
+            debugBtn.style.cssText = `
+                position: fixed;
+                top: 10px;
+                right: 10px;
+                z-index: 10000;
+                padding: 10px;
+                background: #ff6b6b;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            `;
+            debugBtn.onclick = forceShowTrackingSection;
+            document.body.appendChild(debugBtn);
+        });
 
         // ===== TRACKING ANALYSIS FUNCTIONS =====
 
