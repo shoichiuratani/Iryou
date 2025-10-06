@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surgi-Motion Visualizer</title>
+    
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        /* ヘッダー */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            color: #2c3e50;
+            font-size: 24px;
+            margin-right: 20px;
+        }
+
+        .header-actions {
+            margin-left: auto;
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: #3498db;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #2980b9;
+        }
+
+        .btn-success {
+            background: #27ae60;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background: #229954;
+        }
+
+        /* メインコンテンツ */
+        .main-content {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            padding-top: 60px;
+        }
+
+        /* 左パネル - 動画プレイヤー */
+        .left-panel {
+            width: 50%;
+            background: rgba(255, 255, 255, 0.9);
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .video-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .video-player {
+            width: 100%;
+            height: 300px;
+            background: #000;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .video-controls {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .timeline {
+            flex: 1;
+            height: 6px;
+            background: #ddd;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .timeline-progress {
+            height: 100%;
+            background: #3498db;
+            border-radius: 3px;
+            width: 0%;
+            transition: width 0.1s ease;
+        }
+
+        .control-panel {
+            background: #ecf0f1;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .control-panel h3 {
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        .roi-selection {
+            margin-bottom: 15px;
+        }
+
+        .roi-info {
+            background: #fff;
+            padding: 10px;
+            border-radius: 6px;
+            border-left: 4px solid #e74c3c;
+            margin-top: 10px;
+        }
+
+        /* 右パネル - 3D可視化 */
+        .right-panel {
+            width: 50%;
+            background: rgba(0, 0, 0, 0.9);
+            position: relative;
+        }
+
+        .visualizer-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .visualizer-overlay {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .viz-info {
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            min-width: 200px;
+        }
+
+        .viz-controls {
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .status-indicator {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            display: none;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 2px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: #27ae60;
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        /* ファイルアップロード */
+        .upload-area {
+            border: 2px dashed #3498db;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .upload-area:hover {
+            border-color: #2980b9;
+            background: rgba(52, 152, 219, 0.1);
+        }
+
+        .upload-area.dragover {
+            border-color: #27ae60;
+            background: rgba(39, 174, 96, 0.1);
+        }
+
+        #file-input {
+            display: none;
+        }
+
+        /* レスポンシブデザイン */
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+
+            .left-panel,
+            .right-panel {
+                width: 100%;
+                height: 50vh;
+            }
+        }
+
+        /* ローディングアニメーション */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* 3D可視化スタイル */
+        #three-canvas {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .legend {
+            position: absolute;
+            bottom: 80px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 12px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .legend-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <div class="header">
+        <h1>🏥 Surgi-Motion Visualizer</h1>
+        <div class="header-actions">
+            <button class="btn btn-primary" id="reset-btn">リセット</button>
+            <button class="btn btn-success" id="export-btn" style="display: none;">データ出力</button>
+        </div>
+    </div>
+
+    <!-- メインコンテンツ -->
+    <div class="main-content">
+        <!-- 左パネル - 動画プレイヤー -->
+        <div class="left-panel">
+            <!-- 動画アップロードエリア -->
+            <div class="upload-area" id="upload-area">
+                <h3>📹 手術動画をアップロード</h3>
+                <p>MP4ファイルをドラッグ&ドロップまたはクリックして選択</p>
+                <input type="file" id="file-input" accept="video/*">
+            </div>
+
+            <!-- 動画プレイヤー -->
+            <div class="video-container" id="video-container" style="display: none;">
+                <video class="video-player" id="video-player" controls>
+                    <source id="video-source" src="" type="video/mp4">
+                    お使いのブラウザは動画再生に対応していません。
+                </video>
+
+                <!-- 動画コントロール -->
+                <div class="video-controls">
+                    <button class="btn btn-primary" id="play-btn">▶️</button>
+                    <button class="btn btn-primary" id="pause-btn" style="display: none;">⏸️</button>
+                    <div class="timeline" id="timeline">
+                        <div class="timeline-progress" id="timeline-progress"></div>
+                    </div>
+                    <span id="time-display">00:00 / 00:00</span>
+                </div>
+            </div>
+
+            <!-- コントロールパネル -->
+            <div class="control-panel">
+                <h3>🎯 器具選択・解析設定</h3>
+                
+                <div class="roi-selection">
+                    <button class="btn btn-primary" id="roi-select-btn" disabled>
+                        器具を選択（動画上でクリック）
+                    </button>
+                    <div class="roi-info" id="roi-info" style="display: none;">
+                        <strong>選択済み:</strong> <span id="roi-coordinates"></span>
+                    </div>
+                </div>
+
+                <div style="margin-top: 15px;">
+                    <button class="btn btn-success" id="start-analysis-btn" disabled>
+                        🚀 解析開始
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 右パネル - 3D可視化 -->
+        <div class="right-panel">
+            <div class="visualizer-container">
+                <!-- 3Dキャンバス -->
+                <canvas id="three-canvas"></canvas>
+
+                <!-- オーバーレイ情報 -->
+                <div class="visualizer-overlay">
+                    <div class="viz-info">
+                        <h4>📊 解析情報</h4>
+                        <div id="analysis-stats">
+                            <p>フレーム: <span id="current-frame">-</span></p>
+                            <p>手の検出: <span id="hands-detected">-</span></p>
+                            <p>器具の検出: <span id="instruments-detected">-</span></p>
+                        </div>
+                    </div>
+
+                    <div class="viz-controls">
+                        <h4>🎮 表示設定</h4>
+                        <label><input type="checkbox" id="show-hands" checked> 手を表示</label>
+                        <label><input type="checkbox" id="show-instruments" checked> 器具を表示</label>
+                        <label><input type="checkbox" id="show-trails" checked> 軌跡を表示</label>
+                    </div>
+                </div>
+
+                <!-- 処理状況 -->
+                <div class="status-indicator" id="status-indicator">
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <div class="loading"></div>
+                        <span id="status-text">解析中...</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                </div>
+
+                <!-- 凡例 -->
+                <div class="legend">
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #ff0000;"></div>
+                        右手
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #0000ff;"></div>
+                        左手
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #00ff00;"></div>
+                        器具
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #ffff00;"></div>
+                        軌跡
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="src/utils/constants.js"></script>
+    <script src="src/services/api.js"></script>
+    <script src="src/services/three_utils.js"></script>
+    <script src="src/components/VideoPlayer.js"></script>
+    <script src="src/components/Visualizer3D.js"></script>
+    <script src="src/components/ControlPanel.js"></script>
+    <script src="src/app.js"></script>
+</body>
+</html>
