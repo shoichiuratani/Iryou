@@ -321,9 +321,38 @@ class ROITrackingService:
         if session["status"] != "tracking_completed":
             raise ValueError("Tracking not completed yet")
         
+        # Prepare serializable tracking results (exclude numpy arrays)
+        serializable_results = {
+            "frames": [],
+            "summary": session["tracking_results"]["summary"]
+        }
+        
+        # Process frames and exclude non-serializable data
+        for frame in session["tracking_results"]["frames"]:
+            serializable_frame = {
+                "frame_index": frame["frame_index"],
+                "timestamp": frame["timestamp"],
+                "masks": []
+            }
+            
+            # Process masks and exclude numpy arrays
+            for mask in frame["masks"]:
+                serializable_mask = {
+                    "id": mask["id"],
+                    "type": mask["type"],
+                    "bbox": mask["bbox"],
+                    "center": mask["center"],
+                    "area": mask["area"],
+                    "confidence": mask["confidence"]
+                    # Exclude 'mask' and 'contour' which contain numpy arrays
+                }
+                serializable_frame["masks"].append(serializable_mask)
+            
+            serializable_results["frames"].append(serializable_frame)
+        
         return {
             "session_id": session_id,
-            "tracking_results": session["tracking_results"],
+            "tracking_results": serializable_results,
             "roi_data": {
                 "points": session["roi_data"]["points"],
                 "type": session["roi_data"]["type"],

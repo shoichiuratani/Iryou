@@ -1,0 +1,3145 @@
+{
+  "session_id": "session_1759757220",
+  "tracking_results": {
+    "frames": [
+      {
+        "frame_index": 0,
+        "timestamp": 0.0,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              169,
+              53,
+              158
+            ],
+            "center": [
+              503,
+              248
+            ],
+            "area": 8135,
+            "confidence": 0.4629346258612402
+          }
+        ]
+      },
+      {
+        "frame_index": 5,
+        "timestamp": 0.2,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              161,
+              53,
+              166
+            ],
+            "center": [
+              503,
+              244
+            ],
+            "area": 8569,
+            "confidence": 0.45548337930033383
+          }
+        ]
+      },
+      {
+        "frame_index": 10,
+        "timestamp": 0.4,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              149,
+              53,
+              178
+            ],
+            "center": [
+              503,
+              238
+            ],
+            "area": 9134,
+            "confidence": 0.44414215376846355
+          }
+        ]
+      },
+      {
+        "frame_index": 15,
+        "timestamp": 0.6,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              139,
+              53,
+              188
+            ],
+            "center": [
+              503,
+              233
+            ],
+            "area": 9651,
+            "confidence": 0.436529538252603
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              507,
+              50,
+              23,
+              76
+            ],
+            "center": [
+              518,
+              88
+            ],
+            "area": 1128,
+            "confidence": 0.3976454293628809
+          }
+        ]
+      },
+      {
+        "frame_index": 20,
+        "timestamp": 0.8,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              128,
+              53,
+              199
+            ],
+            "center": [
+              503,
+              227
+            ],
+            "area": 10233,
+            "confidence": 0.42920759576778367
+          },
+          {
+            "id": 1,
+            "type": "scissors",
+            "bbox": [
+              493,
+              50,
+              36,
+              66
+            ],
+            "center": [
+              511,
+              83
+            ],
+            "area": 1841,
+            "confidence": 0.5113751147842057
+          }
+        ]
+      },
+      {
+        "frame_index": 25,
+        "timestamp": 1.0,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              114,
+              53,
+              213
+            ],
+            "center": [
+              503,
+              220
+            ],
+            "area": 10999,
+            "confidence": 0.42122264101038154
+          },
+          {
+            "id": 2,
+            "type": "scissors",
+            "bbox": [
+              477,
+              50,
+              48,
+              52
+            ],
+            "center": [
+              501,
+              76
+            ],
+            "area": 1893,
+            "confidence": 0.6500369822485208
+          }
+        ]
+      },
+      {
+        "frame_index": 30,
+        "timestamp": 1.2,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              100,
+              53,
+              227
+            ],
+            "center": [
+              503,
+              213
+            ],
+            "area": 11733,
+            "confidence": 0.4138533641250558
+          },
+          {
+            "id": 1,
+            "type": "scissors",
+            "bbox": [
+              477,
+              50,
+              42,
+              39
+            ],
+            "center": [
+              498,
+              69
+            ],
+            "area": 957,
+            "confidence": 0.6147600262984878
+          }
+        ]
+      },
+      {
+        "frame_index": 35,
+        "timestamp": 1.4,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              93,
+              53,
+              234
+            ],
+            "center": [
+              503,
+              210
+            ],
+            "area": 12094,
+            "confidence": 0.4104399517861056
+          },
+          {
+            "id": 1,
+            "type": "scissors",
+            "bbox": [
+              477,
+              51,
+              31,
+              31
+            ],
+            "center": [
+              492,
+              66
+            ],
+            "area": 523,
+            "confidence": 0.5721123829344432
+          }
+        ]
+      },
+      {
+        "frame_index": 40,
+        "timestamp": 1.6,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              89,
+              53,
+              238
+            ],
+            "center": [
+              503,
+              208
+            ],
+            "area": 12270,
+            "confidence": 0.40830802909399055
+          }
+        ]
+      },
+      {
+        "frame_index": 45,
+        "timestamp": 1.8,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scissors",
+            "bbox": [
+              477,
+              294,
+              44,
+              33
+            ],
+            "center": [
+              499,
+              310
+            ],
+            "area": 725,
+            "confidence": 0.6331037649219466
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              84,
+              53,
+              242
+            ],
+            "center": [
+              503,
+              205
+            ],
+            "area": 11610,
+            "confidence": 0.3991223277098559
+          }
+        ]
+      },
+      {
+        "frame_index": 50,
+        "timestamp": 2.0,
+        "masks": [
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              76,
+              53,
+              251
+            ],
+            "center": [
+              503,
+              201
+            ],
+            "area": 12402,
+            "confidence": 0.3984270090950937
+          }
+        ]
+      },
+      {
+        "frame_index": 55,
+        "timestamp": 2.2,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              63,
+              53,
+              264
+            ],
+            "center": [
+              503,
+              195
+            ],
+            "area": 13588,
+            "confidence": 0.39748407369146005
+          }
+        ]
+      },
+      {
+        "frame_index": 60,
+        "timestamp": 2.4,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              56,
+              53,
+              271
+            ],
+            "center": [
+              503,
+              191
+            ],
+            "area": 13954,
+            "confidence": 0.39500142971909424
+          }
+        ]
+      },
+      {
+        "frame_index": 65,
+        "timestamp": 2.6,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              54,
+              53,
+              273
+            ],
+            "center": [
+              503,
+              190
+            ],
+            "area": 14057,
+            "confidence": 0.39430557232755037
+          }
+        ]
+      },
+      {
+        "frame_index": 70,
+        "timestamp": 2.8,
+        "masks": [
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              52,
+              53,
+              275
+            ],
+            "center": [
+              503,
+              189
+            ],
+            "area": 13983,
+            "confidence": 0.3924495867768595
+          }
+        ]
+      },
+      {
+        "frame_index": 75,
+        "timestamp": 3.0,
+        "masks": [
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              50,
+              53,
+              277
+            ],
+            "center": [
+              503,
+              188
+            ],
+            "area": 14131,
+            "confidence": 0.39208708571726464
+          }
+        ]
+      },
+      {
+        "frame_index": 80,
+        "timestamp": 3.2,
+        "masks": [
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              50,
+              53,
+              277
+            ],
+            "center": [
+              503,
+              188
+            ],
+            "area": 14075,
+            "confidence": 0.39172216502235135
+          }
+        ]
+      },
+      {
+        "frame_index": 85,
+        "timestamp": 3.4,
+        "masks": [
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              50,
+              53,
+              277
+            ],
+            "center": [
+              503,
+              188
+            ],
+            "area": 14217,
+            "confidence": 0.39264749964159573
+          }
+        ]
+      },
+      {
+        "frame_index": 90,
+        "timestamp": 3.6,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              50,
+              53,
+              277
+            ],
+            "center": [
+              503,
+              188
+            ],
+            "area": 14325,
+            "confidence": 0.3933512752674999
+          }
+        ]
+      },
+      {
+        "frame_index": 95,
+        "timestamp": 3.8,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              50,
+              53,
+              277
+            ],
+            "center": [
+              503,
+              188
+            ],
+            "area": 14265,
+            "confidence": 0.39296028880866424
+          }
+        ]
+      },
+      {
+        "frame_index": 100,
+        "timestamp": 4.0,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              50,
+              53,
+              277
+            ],
+            "center": [
+              503,
+              188
+            ],
+            "area": 14130,
+            "confidence": 0.39208056927628404
+          }
+        ]
+      },
+      {
+        "frame_index": 105,
+        "timestamp": 4.2,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              50,
+              53,
+              277
+            ],
+            "center": [
+              503,
+              188
+            ],
+            "area": 14156,
+            "confidence": 0.3922499967417795
+          }
+        ]
+      },
+      {
+        "frame_index": 110,
+        "timestamp": 4.4,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              50,
+              53,
+              277
+            ],
+            "center": [
+              503,
+              188
+            ],
+            "area": 14102,
+            "confidence": 0.39189485070833713
+          }
+        ]
+      },
+      {
+        "frame_index": 115,
+        "timestamp": 4.6,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scissors",
+            "bbox": [
+              477,
+              279,
+              53,
+              48
+            ],
+            "center": [
+              503,
+              303
+            ],
+            "area": 1739,
+            "confidence": 0.6774956597222223
+          },
+          {
+            "id": 1,
+            "type": "scissors",
+            "bbox": [
+              477,
+              259,
+              53,
+              42
+            ],
+            "center": [
+              503,
+              280
+            ],
+            "area": 611,
+            "confidence": 0.47318594104308387
+          },
+          {
+            "id": 2,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              50,
+              53,
+              235
+            ],
+            "center": [
+              503,
+              167
+            ],
+            "area": 11423,
+            "confidence": 0.40342236306020823
+          }
+        ]
+      },
+      {
+        "frame_index": 120,
+        "timestamp": 4.8,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scissors",
+            "bbox": [
+              477,
+              279,
+              53,
+              48
+            ],
+            "center": [
+              503,
+              303
+            ],
+            "area": 1699,
+            "confidence": 0.6687065972222223
+          },
+          {
+            "id": 2,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              50,
+              53,
+              245
+            ],
+            "center": [
+              503,
+              172
+            ],
+            "area": 11820,
+            "confidence": 0.39845897542690545
+          }
+        ]
+      },
+      {
+        "frame_index": 125,
+        "timestamp": 5.0,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scissors",
+            "bbox": [
+              477,
+              273,
+              53,
+              54
+            ],
+            "center": [
+              503,
+              300
+            ],
+            "area": 1938,
+            "confidence": 0.6323902606310013
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              50,
+              53,
+              243
+            ],
+            "center": [
+              503,
+              171
+            ],
+            "area": 11652,
+            "confidence": 0.3986638215719148
+          }
+        ]
+      },
+      {
+        "frame_index": 130,
+        "timestamp": 5.2,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scissors",
+            "bbox": [
+              477,
+              228,
+              53,
+              99
+            ],
+            "center": [
+              503,
+              277
+            ],
+            "area": 4240,
+            "confidence": 0.5163299663299663
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              50,
+              53,
+              204
+            ],
+            "center": [
+              503,
+              152
+            ],
+            "area": 9633,
+            "confidence": 0.41574274317570165
+          }
+        ]
+      },
+      {
+        "frame_index": 135,
+        "timestamp": 5.4,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              50,
+              53,
+              277
+            ],
+            "center": [
+              503,
+              188
+            ],
+            "area": 14232,
+            "confidence": 0.39274524625630464
+          }
+        ]
+      },
+      {
+        "frame_index": 140,
+        "timestamp": 5.6,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              50,
+              53,
+              277
+            ],
+            "center": [
+              503,
+              188
+            ],
+            "area": 14304,
+            "confidence": 0.3932144300069074
+          }
+        ]
+      },
+      {
+        "frame_index": 145,
+        "timestamp": 5.8,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              50,
+              53,
+              277
+            ],
+            "center": [
+              503,
+              188
+            ],
+            "area": 14309,
+            "confidence": 0.39324701221181035
+          }
+        ]
+      },
+      {
+        "frame_index": 150,
+        "timestamp": 6.0,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              193,
+              53,
+              134
+            ],
+            "center": [
+              503,
+              260
+            ],
+            "area": 5953,
+            "confidence": 0.46578024058810424
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              50,
+              53,
+              173
+            ],
+            "center": [
+              503,
+              136
+            ],
+            "area": 7982,
+            "confidence": 0.433357278893381
+          }
+        ]
+      },
+      {
+        "frame_index": 155,
+        "timestamp": 6.2,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              202,
+              53,
+              125
+            ],
+            "center": [
+              503,
+              264
+            ],
+            "area": 5489,
+            "confidence": 0.475664
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              53,
+              53,
+              180
+            ],
+            "center": [
+              503,
+              143
+            ],
+            "area": 8283,
+            "confidence": 0.4278240740740741
+          }
+        ]
+      },
+      {
+        "frame_index": 160,
+        "timestamp": 6.4,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              194,
+              53,
+              133
+            ],
+            "center": [
+              503,
+              260
+            ],
+            "area": 5837,
+            "confidence": 0.4650036746000339
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              57,
+              53,
+              169
+            ],
+            "center": [
+              503,
+              141
+            ],
+            "area": 7714,
+            "confidence": 0.43505304436119185
+          }
+        ]
+      },
+      {
+        "frame_index": 165,
+        "timestamp": 6.6,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              64,
+              53,
+              263
+            ],
+            "center": [
+              503,
+              195
+            ],
+            "area": 13492,
+            "confidence": 0.39753285431334845
+          }
+        ]
+      },
+      {
+        "frame_index": 170,
+        "timestamp": 6.8,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              74,
+              53,
+              253
+            ],
+            "center": [
+              503,
+              200
+            ],
+            "area": 13020,
+            "confidence": 0.4017083535127873
+          }
+        ]
+      },
+      {
+        "frame_index": 175,
+        "timestamp": 7.0,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              51,
+              53,
+              276
+            ],
+            "center": [
+              503,
+              189
+            ],
+            "area": 13782,
+            "confidence": 0.3904615626969124
+          }
+        ]
+      },
+      {
+        "frame_index": 180,
+        "timestamp": 7.2,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              97,
+              53,
+              230
+            ],
+            "center": [
+              503,
+              212
+            ],
+            "area": 11839,
+            "confidence": 0.4118998109640832
+          }
+        ]
+      },
+      {
+        "frame_index": 185,
+        "timestamp": 7.4,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              110,
+              53,
+              217
+            ],
+            "center": [
+              503,
+              218
+            ],
+            "area": 11166,
+            "confidence": 0.4185627216547389
+          }
+        ]
+      },
+      {
+        "frame_index": 190,
+        "timestamp": 7.6,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              118,
+              53,
+              209
+            ],
+            "center": [
+              503,
+              222
+            ],
+            "area": 10761,
+            "confidence": 0.42317712506581806
+          }
+        ]
+      },
+      {
+        "frame_index": 195,
+        "timestamp": 7.8,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              125,
+              53,
+              202
+            ],
+            "center": [
+              503,
+              226
+            ],
+            "area": 10390,
+            "confidence": 0.42731594941672385
+          }
+        ]
+      },
+      {
+        "frame_index": 200,
+        "timestamp": 8.0,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              132,
+              53,
+              195
+            ],
+            "center": [
+              503,
+              229
+            ],
+            "area": 10015,
+            "confidence": 0.4316962524654832
+          }
+        ]
+      },
+      {
+        "frame_index": 205,
+        "timestamp": 8.2,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              136,
+              53,
+              191
+            ],
+            "center": [
+              503,
+              231
+            ],
+            "area": 9849,
+            "confidence": 0.4349880759847592
+          }
+        ]
+      },
+      {
+        "frame_index": 210,
+        "timestamp": 8.4,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              141,
+              53,
+              186
+            ],
+            "center": [
+              503,
+              234
+            ],
+            "area": 9601,
+            "confidence": 0.43876604231703087
+          }
+        ]
+      },
+      {
+        "frame_index": 215,
+        "timestamp": 8.6,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              144,
+              53,
+              183
+            ],
+            "center": [
+              503,
+              235
+            ],
+            "area": 9429,
+            "confidence": 0.44077756875391916
+          },
+          {
+            "id": 1,
+            "type": "scissors",
+            "bbox": [
+              478,
+              50,
+              52,
+              72
+            ],
+            "center": [
+              504,
+              86
+            ],
+            "area": 2853,
+            "confidence": 0.575221836419753
+          }
+        ]
+      },
+      {
+        "frame_index": 220,
+        "timestamp": 8.8,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              148,
+              53,
+              179
+            ],
+            "center": [
+              503,
+              237
+            ],
+            "area": 9128,
+            "confidence": 0.4424424955525733
+          },
+          {
+            "id": 2,
+            "type": "scissors",
+            "bbox": [
+              477,
+              50,
+              24,
+              38
+            ],
+            "center": [
+              489,
+              69
+            ],
+            "area": 589,
+            "confidence": 0.5039473684210526
+          }
+        ]
+      },
+      {
+        "frame_index": 225,
+        "timestamp": 9.0,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              151,
+              53,
+              176
+            ],
+            "center": [
+              503,
+              239
+            ],
+            "area": 8967,
+            "confidence": 0.44474916064049586
+          },
+          {
+            "id": 2,
+            "type": "scissors",
+            "bbox": [
+              501,
+              50,
+              29,
+              44
+            ],
+            "center": [
+              515,
+              72
+            ],
+            "area": 654,
+            "confidence": 0.4690340909090909
+          }
+        ]
+      },
+      {
+        "frame_index": 230,
+        "timestamp": 9.2,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              158,
+              53,
+              169
+            ],
+            "center": [
+              503,
+              242
+            ],
+            "area": 8559,
+            "confidence": 0.44984594376947584
+          },
+          {
+            "id": 2,
+            "type": "scissors",
+            "bbox": [
+              490,
+              50,
+              40,
+              61
+            ],
+            "center": [
+              510,
+              80
+            ],
+            "area": 1216,
+            "confidence": 0.4634641225477022
+          }
+        ]
+      },
+      {
+        "frame_index": 235,
+        "timestamp": 9.4,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              170,
+              53,
+              157
+            ],
+            "center": [
+              503,
+              248
+            ],
+            "area": 7999,
+            "confidence": 0.46226824617631546
+          },
+          {
+            "id": 1,
+            "type": "scissors",
+            "bbox": [
+              477,
+              50,
+              53,
+              79
+            ],
+            "center": [
+              503,
+              89
+            ],
+            "area": 2447,
+            "confidence": 0.4960823585963788
+          }
+        ]
+      },
+      {
+        "frame_index": 240,
+        "timestamp": 9.6,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              182,
+              53,
+              145
+            ],
+            "center": [
+              503,
+              254
+            ],
+            "area": 7426,
+            "confidence": 0.47661117717003565
+          },
+          {
+            "id": 1,
+            "type": "scissors",
+            "bbox": [
+              477,
+              50,
+              53,
+              94
+            ],
+            "center": [
+              503,
+              97
+            ],
+            "area": 2977,
+            "confidence": 0.46845857854232686
+          }
+        ]
+      },
+      {
+        "frame_index": 245,
+        "timestamp": 9.8,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              195,
+              53,
+              132
+            ],
+            "center": [
+              503,
+              261
+            ],
+            "area": 6762,
+            "confidence": 0.4940570477502295
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              482,
+              50,
+              48,
+              110
+            ],
+            "center": [
+              506,
+              105
+            ],
+            "area": 3156,
+            "confidence": 0.43041322314049585
+          }
+        ]
+      },
+      {
+        "frame_index": 250,
+        "timestamp": 10.0,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              200,
+              53,
+              127
+            ],
+            "center": [
+              503,
+              263
+            ],
+            "area": 6479,
+            "confidence": 0.5008494016988034
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              486,
+              50,
+              44,
+              118
+            ],
+            "center": [
+              508,
+              109
+            ],
+            "area": 2860,
+            "confidence": 0.4027183280666475
+          }
+        ]
+      },
+      {
+        "frame_index": 255,
+        "timestamp": 10.2,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              207,
+              53,
+              120
+            ],
+            "center": [
+              503,
+              267
+            ],
+            "area": 6120,
+            "confidence": 0.5125
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              491,
+              64,
+              39,
+              111
+            ],
+            "center": [
+              510,
+              119
+            ],
+            "area": 2416,
+            "confidence": 0.39804398993588186
+          }
+        ]
+      },
+      {
+        "frame_index": 260,
+        "timestamp": 10.4,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              214,
+              53,
+              113
+            ],
+            "center": [
+              503,
+              270
+            ],
+            "area": 5753,
+            "confidence": 0.5252721434724724
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              496,
+              78,
+              34,
+              104
+            ],
+            "center": [
+              513,
+              130
+            ],
+            "area": 1866,
+            "confidence": 0.38628420857988166
+          }
+        ]
+      },
+      {
+        "frame_index": 265,
+        "timestamp": 10.6,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              218,
+              53,
+              109
+            ],
+            "center": [
+              503,
+              272
+            ],
+            "area": 5534,
+            "confidence": 0.5328928541368572
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              498,
+              89,
+              32,
+              98
+            ],
+            "center": [
+              514,
+              138
+            ],
+            "area": 1650,
+            "confidence": 0.38590170762182424
+          }
+        ]
+      },
+      {
+        "frame_index": 270,
+        "timestamp": 10.8,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scissors",
+            "bbox": [
+              477,
+              221,
+              53,
+              106
+            ],
+            "center": [
+              503,
+              274
+            ],
+            "area": 5379,
+            "confidence": 0.5393645425418299
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              503,
+              106,
+              27,
+              84
+            ],
+            "center": [
+              516,
+              148
+            ],
+            "area": 1219,
+            "confidence": 0.3864158163265306
+          }
+        ]
+      },
+      {
+        "frame_index": 275,
+        "timestamp": 11.0,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scissors",
+            "bbox": [
+              477,
+              222,
+              53,
+              105
+            ],
+            "center": [
+              503,
+              274
+            ],
+            "area": 5311,
+            "confidence": 0.5408843537414966
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              505,
+              114,
+              25,
+              78
+            ],
+            "center": [
+              517,
+              153
+            ],
+            "area": 1033,
+            "confidence": 0.38489480604865217
+          }
+        ]
+      },
+      {
+        "frame_index": 280,
+        "timestamp": 11.2,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scissors",
+            "bbox": [
+              477,
+              223,
+              53,
+              104
+            ],
+            "center": [
+              503,
+              275
+            ],
+            "area": 5282,
+            "confidence": 0.5441752958579882
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              507,
+              120,
+              23,
+              73
+            ],
+            "center": [
+              518,
+              156
+            ],
+            "area": 904,
+            "confidence": 0.38486582848564455
+          }
+        ]
+      },
+      {
+        "frame_index": 285,
+        "timestamp": 11.4,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scissors",
+            "bbox": [
+              477,
+              223,
+              53,
+              104
+            ],
+            "center": [
+              503,
+              275
+            ],
+            "area": 5270,
+            "confidence": 0.5436205621301775
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              508,
+              124,
+              22,
+              70
+            ],
+            "center": [
+              519,
+              159
+            ],
+            "area": 824,
+            "confidence": 0.38413265306122446
+          }
+        ]
+      },
+      {
+        "frame_index": 290,
+        "timestamp": 11.6,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scissors",
+            "bbox": [
+              477,
+              223,
+              53,
+              104
+            ],
+            "center": [
+              503,
+              275
+            ],
+            "area": 5264,
+            "confidence": 0.5433431952662722
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              511,
+              131,
+              19,
+              63
+            ],
+            "center": [
+              520,
+              162
+            ],
+            "area": 658,
+            "confidence": 0.3829554043839758
+          }
+        ]
+      },
+      {
+        "frame_index": 295,
+        "timestamp": 11.8,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scissors",
+            "bbox": [
+              477,
+              225,
+              53,
+              102
+            ],
+            "center": [
+              503,
+              276
+            ],
+            "area": 5208,
+            "confidence": 0.5502883506343714
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              513,
+              138,
+              17,
+              57
+            ],
+            "center": [
+              521,
+              166
+            ],
+            "area": 520,
+            "confidence": 0.38002462296091105
+          }
+        ]
+      },
+      {
+        "frame_index": 300,
+        "timestamp": 12.0,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scissors",
+            "bbox": [
+              477,
+              225,
+              53,
+              102
+            ],
+            "center": [
+              503,
+              276
+            ],
+            "area": 5207,
+            "confidence": 0.5502643214148404
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              513,
+              138,
+              17,
+              58
+            ],
+            "center": [
+              521,
+              167
+            ],
+            "area": 535,
+            "confidence": 0.37959274673008325
+          }
+        ]
+      },
+      {
+        "frame_index": 305,
+        "timestamp": 12.2,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scissors",
+            "bbox": [
+              477,
+              225,
+              53,
+              102
+            ],
+            "center": [
+              503,
+              276
+            ],
+            "area": 5184,
+            "confidence": 0.5491589773164167
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              511,
+              135,
+              19,
+              61
+            ],
+            "center": [
+              520,
+              165
+            ],
+            "area": 617,
+            "confidence": 0.382907820478366
+          }
+        ]
+      },
+      {
+        "frame_index": 310,
+        "timestamp": 12.4,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scissors",
+            "bbox": [
+              477,
+              226,
+              53,
+              101
+            ],
+            "center": [
+              503,
+              276
+            ],
+            "area": 5133,
+            "confidence": 0.5516174884815215
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              508,
+              126,
+              22,
+              72
+            ],
+            "center": [
+              519,
+              162
+            ],
+            "area": 860,
+            "confidence": 0.3829957561728395
+          }
+        ]
+      },
+      {
+        "frame_index": 315,
+        "timestamp": 12.6,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scissors",
+            "bbox": [
+              477,
+              227,
+              53,
+              100
+            ],
+            "center": [
+              503,
+              277
+            ],
+            "area": 5077,
+            "confidence": 0.553875
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              504,
+              118,
+              26,
+              82
+            ],
+            "center": [
+              517,
+              159
+            ],
+            "area": 1138,
+            "confidence": 0.3846594289113623
+          }
+        ]
+      },
+      {
+        "frame_index": 320,
+        "timestamp": 12.8,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scissors",
+            "bbox": [
+              477,
+              229,
+              53,
+              98
+            ],
+            "center": [
+              503,
+              278
+            ],
+            "area": 4952,
+            "confidence": 0.55783527696793
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              501,
+              112,
+              29,
+              90
+            ],
+            "center": [
+              515,
+              157
+            ],
+            "area": 1397,
+            "confidence": 0.3862654320987654
+          }
+        ]
+      },
+      {
+        "frame_index": 325,
+        "timestamp": 13.0,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scissors",
+            "bbox": [
+              477,
+              231,
+              53,
+              96
+            ],
+            "center": [
+              503,
+              279
+            ],
+            "area": 4858,
+            "confidence": 0.5635633680555556
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              501,
+              111,
+              29,
+              93
+            ],
+            "center": [
+              515,
+              157
+            ],
+            "area": 1476,
+            "confidence": 0.38532778355879294
+          }
+        ]
+      },
+      {
+        "frame_index": 330,
+        "timestamp": 13.2,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scissors",
+            "bbox": [
+              477,
+              233,
+              53,
+              94
+            ],
+            "center": [
+              503,
+              280
+            ],
+            "area": 4777,
+            "confidence": 0.5703429153463104
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              501,
+              113,
+              29,
+              93
+            ],
+            "center": [
+              515,
+              159
+            ],
+            "area": 1475,
+            "confidence": 0.3852988784830616
+          }
+        ]
+      },
+      {
+        "frame_index": 335,
+        "timestamp": 13.4,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scissors",
+            "bbox": [
+              477,
+              234,
+              53,
+              93
+            ],
+            "center": [
+              503,
+              280
+            ],
+            "area": 4695,
+            "confidence": 0.5714475661926235
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              501,
+              116,
+              29,
+              92
+            ],
+            "center": [
+              515,
+              162
+            ],
+            "area": 1434,
+            "confidence": 0.3847117202268431
+          }
+        ]
+      },
+      {
+        "frame_index": 340,
+        "timestamp": 13.6,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scissors",
+            "bbox": [
+              477,
+              235,
+              53,
+              92
+            ],
+            "center": [
+              503,
+              281
+            ],
+            "area": 4662,
+            "confidence": 0.5754312381852551
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              502,
+              119,
+              28,
+              90
+            ],
+            "center": [
+              516,
+              164
+            ],
+            "area": 1361,
+            "confidence": 0.38404320987654317
+          }
+        ]
+      },
+      {
+        "frame_index": 345,
+        "timestamp": 13.8,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scissors",
+            "bbox": [
+              477,
+              237,
+              53,
+              90
+            ],
+            "center": [
+              503,
+              282
+            ],
+            "area": 4598,
+            "confidence": 0.5838271604938272
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              501,
+              118,
+              29,
+              92
+            ],
+            "center": [
+              515,
+              164
+            ],
+            "area": 1418,
+            "confidence": 0.3837960775047259
+          }
+        ]
+      },
+      {
+        "frame_index": 350,
+        "timestamp": 14.0,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scissors",
+            "bbox": [
+              477,
+              238,
+              53,
+              89
+            ],
+            "center": [
+              503,
+              282
+            ],
+            "area": 4537,
+            "confidence": 0.5863906072465598
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              501,
+              116,
+              29,
+              95
+            ],
+            "center": [
+              515,
+              163
+            ],
+            "area": 1506,
+            "confidence": 0.3834349030470914
+          }
+        ]
+      },
+      {
+        "frame_index": 355,
+        "timestamp": 14.2,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scissors",
+            "bbox": [
+              477,
+              238,
+              53,
+              89
+            ],
+            "center": [
+              503,
+              282
+            ],
+            "area": 4488,
+            "confidence": 0.5832975634389597
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              500,
+              114,
+              30,
+              98
+            ],
+            "center": [
+              515,
+              163
+            ],
+            "area": 1610,
+            "confidence": 0.38384527280299874
+          }
+        ]
+      },
+      {
+        "frame_index": 360,
+        "timestamp": 14.4,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scissors",
+            "bbox": [
+              477,
+              239,
+              53,
+              88
+            ],
+            "center": [
+              503,
+              283
+            ],
+            "area": 4457,
+            "confidence": 0.5878034607438016
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              499,
+              111,
+              31,
+              102
+            ],
+            "center": [
+              514,
+              162
+            ],
+            "area": 1706,
+            "confidence": 0.3820117262591311
+          }
+        ]
+      },
+      {
+        "frame_index": 365,
+        "timestamp": 14.6,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scissors",
+            "bbox": [
+              477,
+              240,
+              53,
+              87
+            ],
+            "center": [
+              503,
+              283
+            ],
+            "area": 4409,
+            "confidence": 0.5912868278504426
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              498,
+              112,
+              32,
+              102
+            ],
+            "center": [
+              514,
+              163
+            ],
+            "area": 1747,
+            "confidence": 0.38398212226066897
+          }
+        ]
+      },
+      {
+        "frame_index": 370,
+        "timestamp": 14.8,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scissors",
+            "bbox": [
+              477,
+              242,
+              53,
+              85
+            ],
+            "center": [
+              503,
+              284
+            ],
+            "area": 4294,
+            "confidence": 0.59719723183391
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              498,
+              113,
+              32,
+              104
+            ],
+            "center": [
+              514,
+              165
+            ],
+            "area": 1798,
+            "confidence": 0.3831407174556213
+          }
+        ]
+      },
+      {
+        "frame_index": 375,
+        "timestamp": 15.0,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scissors",
+            "bbox": [
+              477,
+              244,
+              53,
+              83
+            ],
+            "center": [
+              503,
+              285
+            ],
+            "area": 4206,
+            "confidence": 0.6053055595877486
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              497,
+              112,
+              33,
+              107
+            ],
+            "center": [
+              513,
+              165
+            ],
+            "area": 1910,
+            "confidence": 0.38343523451829853
+          }
+        ]
+      },
+      {
+        "frame_index": 380,
+        "timestamp": 15.2,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scissors",
+            "bbox": [
+              477,
+              245,
+              53,
+              82
+            ],
+            "center": [
+              503,
+              286
+            ],
+            "area": 4161,
+            "confidence": 0.609451219512195
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              495,
+              109,
+              35,
+              110
+            ],
+            "center": [
+              512,
+              164
+            ],
+            "area": 2045,
+            "confidence": 0.38450413223140495
+          }
+        ]
+      },
+      {
+        "frame_index": 385,
+        "timestamp": 15.4,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scissors",
+            "bbox": [
+              477,
+              244,
+              53,
+              83
+            ],
+            "center": [
+              503,
+              285
+            ],
+            "area": 4173,
+            "confidence": 0.6028741471911743
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              493,
+              105,
+              37,
+              114
+            ],
+            "center": [
+              511,
+              162
+            ],
+            "area": 2240,
+            "confidence": 0.3861995998768852
+          }
+        ]
+      },
+      {
+        "frame_index": 390,
+        "timestamp": 15.6,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scissors",
+            "bbox": [
+              477,
+              243,
+              53,
+              84
+            ],
+            "center": [
+              503,
+              285
+            ],
+            "area": 4272,
+            "confidence": 0.6027210884353742
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              490,
+              101,
+              40,
+              114
+            ],
+            "center": [
+              510,
+              158
+            ],
+            "area": 2525,
+            "confidence": 0.39716451215758697
+          }
+        ]
+      },
+      {
+        "frame_index": 395,
+        "timestamp": 15.8,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scissors",
+            "bbox": [
+              477,
+              240,
+              53,
+              87
+            ],
+            "center": [
+              503,
+              283
+            ],
+            "area": 4391,
+            "confidence": 0.5900977672083498
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              485,
+              80,
+              45,
+              131
+            ],
+            "center": [
+              507,
+              145
+            ],
+            "area": 3022,
+            "confidence": 0.3880484820231921
+          }
+        ]
+      },
+      {
+        "frame_index": 400,
+        "timestamp": 16.0,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scissors",
+            "bbox": [
+              477,
+              234,
+              53,
+              93
+            ],
+            "center": [
+              503,
+              280
+            ],
+            "area": 4741,
+            "confidence": 0.5741068331599029
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              479,
+              68,
+              51,
+              137
+            ],
+            "center": [
+              504,
+              136
+            ],
+            "area": 3644,
+            "confidence": 0.3970882838723427
+          }
+        ]
+      },
+      {
+        "frame_index": 405,
+        "timestamp": 16.2,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scissors",
+            "bbox": [
+              477,
+              223,
+              53,
+              104
+            ],
+            "center": [
+              503,
+              275
+            ],
+            "area": 5311,
+            "confidence": 0.5455390162721894
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              54,
+              53,
+              141
+            ],
+            "center": [
+              503,
+              124
+            ],
+            "area": 3970,
+            "confidence": 0.3998440722297671
+          }
+        ]
+      },
+      {
+        "frame_index": 410,
+        "timestamp": 16.4,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              206,
+              53,
+              121
+            ],
+            "center": [
+              503,
+              266
+            ],
+            "area": 6206,
+            "confidence": 0.5119390751997814
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              50,
+              53,
+              128
+            ],
+            "center": [
+              503,
+              114
+            ],
+            "area": 4123,
+            "confidence": 0.425823974609375
+          }
+        ]
+      },
+      {
+        "frame_index": 415,
+        "timestamp": 16.6,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              189,
+              53,
+              138
+            ],
+            "center": [
+              503,
+              258
+            ],
+            "area": 7077,
+            "confidence": 0.48580655324511657
+          },
+          {
+            "id": 1,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              50,
+              53,
+              110
+            ],
+            "center": [
+              503,
+              105
+            ],
+            "area": 3733,
+            "confidence": 0.4542561983471074
+          }
+        ]
+      },
+      {
+        "frame_index": 420,
+        "timestamp": 16.8,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              167,
+              53,
+              160
+            ],
+            "center": [
+              503,
+              247
+            ],
+            "area": 8196,
+            "confidence": 0.460087890625
+          },
+          {
+            "id": 1,
+            "type": "scissors",
+            "bbox": [
+              477,
+              50,
+              53,
+              86
+            ],
+            "center": [
+              503,
+              93
+            ],
+            "area": 2887,
+            "confidence": 0.49520686857760954
+          }
+        ]
+      },
+      {
+        "frame_index": 425,
+        "timestamp": 17.0,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              147,
+              53,
+              180
+            ],
+            "center": [
+              503,
+              237
+            ],
+            "area": 9185,
+            "confidence": 0.44175154320987653
+          },
+          {
+            "id": 1,
+            "type": "scissors",
+            "bbox": [
+              477,
+              50,
+              53,
+              63
+            ],
+            "center": [
+              503,
+              81
+            ],
+            "area": 1555,
+            "confidence": 0.49589317208364825
+          }
+        ]
+      },
+      {
+        "frame_index": 430,
+        "timestamp": 17.2,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              136,
+              53,
+              191
+            ],
+            "center": [
+              503,
+              231
+            ],
+            "area": 9758,
+            "confidence": 0.4337408514020997
+          }
+        ]
+      },
+      {
+        "frame_index": 435,
+        "timestamp": 17.4,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              122,
+              53,
+              205
+            ],
+            "center": [
+              503,
+              224
+            ],
+            "area": 10410,
+            "confidence": 0.4238607971445568
+          }
+        ]
+      },
+      {
+        "frame_index": 440,
+        "timestamp": 17.6,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              111,
+              53,
+              216
+            ],
+            "center": [
+              503,
+              219
+            ],
+            "area": 10949,
+            "confidence": 0.4173375342935528
+          }
+        ]
+      },
+      {
+        "frame_index": 445,
+        "timestamp": 17.8,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              98,
+              53,
+              229
+            ],
+            "center": [
+              503,
+              212
+            ],
+            "area": 11750,
+            "confidence": 0.41203066303083463
+          }
+        ]
+      },
+      {
+        "frame_index": 450,
+        "timestamp": 18.0,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              88,
+              53,
+              239
+            ],
+            "center": [
+              503,
+              207
+            ],
+            "area": 12273,
+            "confidence": 0.4074342185886101
+          }
+        ]
+      },
+      {
+        "frame_index": 455,
+        "timestamp": 18.2,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              86,
+              53,
+              241
+            ],
+            "center": [
+              503,
+              206
+            ],
+            "area": 12419,
+            "confidence": 0.4069110380330917
+          }
+        ]
+      },
+      {
+        "frame_index": 460,
+        "timestamp": 18.4,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              86,
+              53,
+              241
+            ],
+            "center": [
+              503,
+              206
+            ],
+            "area": 12427,
+            "confidence": 0.40697990737074086
+          }
+        ]
+      },
+      {
+        "frame_index": 465,
+        "timestamp": 18.6,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              87,
+              53,
+              240
+            ],
+            "center": [
+              503,
+              207
+            ],
+            "area": 12358,
+            "confidence": 0.40727430555555555
+          }
+        ]
+      },
+      {
+        "frame_index": 470,
+        "timestamp": 18.8,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              91,
+              53,
+              236
+            ],
+            "center": [
+              503,
+              209
+            ],
+            "area": 12217,
+            "confidence": 0.40967573972996263
+          }
+        ]
+      },
+      {
+        "frame_index": 475,
+        "timestamp": 19.0,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              95,
+              53,
+              232
+            ],
+            "center": [
+              503,
+              211
+            ],
+            "area": 12011,
+            "confidence": 0.41157662009512486
+          }
+        ]
+      },
+      {
+        "frame_index": 480,
+        "timestamp": 19.2,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              97,
+              53,
+              230
+            ],
+            "center": [
+              503,
+              212
+            ],
+            "area": 11896,
+            "confidence": 0.4124385633270321
+          }
+        ]
+      },
+      {
+        "frame_index": 485,
+        "timestamp": 19.4,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              98,
+              53,
+              229
+            ],
+            "center": [
+              503,
+              212
+            ],
+            "area": 11812,
+            "confidence": 0.4126218035506569
+          }
+        ]
+      },
+      {
+        "frame_index": 490,
+        "timestamp": 19.6,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              100,
+              53,
+              227
+            ],
+            "center": [
+              503,
+              213
+            ],
+            "area": 11701,
+            "confidence": 0.4135428593607483
+          }
+        ]
+      },
+      {
+        "frame_index": 495,
+        "timestamp": 19.8,
+        "masks": [
+          {
+            "id": 0,
+            "type": "scalpel",
+            "bbox": [
+              477,
+              103,
+              53,
+              224
+            ],
+            "center": [
+              503,
+              215
+            ],
+            "area": 11592,
+            "confidence": 0.41551837531887753
+          }
+        ]
+      }
+    ],
+    "summary": {
+      "total_frames_processed": 100,
+      "instruments_tracked": 2,
+      "processing_time": 0
+    }
+  },
+  "roi_data": {
+    "points": [
+      [
+        477,
+        50
+      ],
+      [
+        529,
+        326
+      ]
+    ],
+    "type": "rectangle",
+    "area": 14681
+  },
+  "video_properties": {
+    "width": 1214,
+    "height": 620,
+    "fps": 25.0,
+    "frame_count": 563,
+    "duration": 22.52
+  }
+}
