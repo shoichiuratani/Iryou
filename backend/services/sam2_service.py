@@ -118,9 +118,9 @@ class SAM2Service:
         return {
             "masks": instruments,
             "roi_mask": roi_mask,
-            "confidence_scores": [inst["confidence"] for inst in instruments],
+            "confidence_scores": [float(inst["confidence"]) for inst in instruments],
             "total_instruments": len(instruments),
-            "roi_area": np.sum(roi_mask > 0),
+            "roi_area": int(np.sum(roi_mask > 0)),  # Convert numpy int64 to Python int
             "processing_info": {
                 "method": "mock_sam2",
                 "roi_type": roi_type,
@@ -163,20 +163,20 @@ class SAM2Service:
             extent = float(area) / (w * h)
             
             # Mock confidence based on shape features
-            confidence = min(0.9, extent * aspect_ratio * 0.5 + 0.3)
+            confidence = float(min(0.9, extent * aspect_ratio * 0.5 + 0.3))
             
             # Mock instrument classification
             instrument_type = "forceps" if aspect_ratio > 3 else "scalpel" if aspect_ratio < 0.5 else "scissors"
             
             instruments.append({
-                "id": i,
-                "type": instrument_type,
+                "id": int(i),  # Ensure it's a Python int
+                "type": str(instrument_type),  # Ensure it's a Python str
                 "mask": instrument_mask,
-                "bbox": [x, y, w, h],
-                "center": [x + w//2, y + h//2],
-                "area": area,
+                "bbox": [int(x), int(y), int(w), int(h)],  # Convert numpy ints to Python ints
+                "center": [int(x + w//2), int(y + h//2)],  # Convert numpy ints to Python ints
+                "area": int(area),  # Convert numpy float64 to Python int
                 "confidence": confidence,
-                "contour": contour.tolist()
+                "contour": contour.tolist()  # This is already converting to list
             })
         
         return instruments
@@ -294,11 +294,11 @@ class SAM2Service:
         
         # Fit ellipse if enough points
         features = {
-            "centroid": [cx, cy],
-            "bbox": [x, y, w, h],
-            "area": area,
-            "perimeter": perimeter,
-            "aspect_ratio": float(w) / h if h > 0 else 0
+            "centroid": [int(cx), int(cy)],  # Convert numpy ints to Python ints
+            "bbox": [int(x), int(y), int(w), int(h)],  # Convert numpy ints to Python ints
+            "area": int(area),  # Convert numpy float64 to Python int
+            "perimeter": float(perimeter),  # Convert numpy float64 to Python float
+            "aspect_ratio": float(w) / h if h > 0 else 0.0  # Ensure it's a Python float
         }
         
         if len(contour) >= 5:
@@ -312,7 +312,7 @@ class SAM2Service:
         # Color histogram in ROI
         roi = cv2.bitwise_and(frame, frame, mask=mask)
         hist = cv2.calcHist([roi], [0, 1, 2], mask, [8, 8, 8], [0, 256, 0, 256, 0, 256])
-        features["color_histogram"] = hist.flatten().tolist()
+        features["color_histogram"] = [float(x) for x in hist.flatten().tolist()]  # Ensure all values are Python floats
         
         return features
 

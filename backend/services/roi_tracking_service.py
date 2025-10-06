@@ -135,19 +135,26 @@ class ROITrackingService:
             "points": roi_points_int,
             "type": roi_type,
             "mask": roi_mask,
-            "area": np.sum(roi_mask > 0),
+            "area": int(np.sum(roi_mask > 0)),  # Convert numpy int64 to Python int
             "initial_detection": initial_detection
         }
         
         session["roi_data"] = roi_data
         session["status"] = "roi_set"
         
+        # Convert numpy types to Python native types for JSON serialization
+        confidence_scores = initial_detection["confidence_scores"]
+        if isinstance(confidence_scores, np.ndarray):
+            confidence_scores = confidence_scores.tolist()
+        elif isinstance(confidence_scores, list):
+            confidence_scores = [float(score) if hasattr(score, 'item') else score for score in confidence_scores]
+        
         return {
             "session_id": session_id,
-            "roi_area": roi_data["area"],
+            "roi_area": int(roi_data["area"]),  # Ensure it's a Python int
             "instruments_detected": len(initial_detection["masks"]),
-            "instrument_types": [inst["type"] for inst in initial_detection["masks"]],
-            "confidence_scores": initial_detection["confidence_scores"],
+            "instrument_types": [str(inst["type"]) for inst in initial_detection["masks"]],
+            "confidence_scores": confidence_scores,
             "status": "roi_set",
             "message": "ROI set successfully"
         }
